@@ -1,0 +1,10 @@
+<h1> Cookd App </h1>
+
+<div> chef list </div>
+
+<% @chefs.each do | chef | %>
+<ul>
+    <li> <%=chef.profile.first_name + " " + chef.profile.last_name %> </li>
+    
+</ul>
+<% end %>

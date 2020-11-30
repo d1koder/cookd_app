@@ -1,0 +1,11 @@
+<h1>New Chef</h1>
+<%= form_with model: @chef, class: "nifty_form" do |f| %>
+  <%= f.label :year_experience %>
+  <%= f.number_field :year_experience %>
+  <br>
+  <br>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <br>
+  <%= f.submit "Create" %>
+<% end %>
