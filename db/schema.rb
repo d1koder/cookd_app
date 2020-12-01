@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_27_025138) do
+ActiveRecord::Schema.define(version: 2020_12_01_010623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "chef_cuisines", force: :cascade do |t|
+    t.bigint "chef_id", null: false
+    t.bigint "cuisine_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chef_id"], name: "index_chef_cuisines_on_chef_id"
+    t.index ["cuisine_id"], name: "index_chef_cuisines_on_cuisine_id"
+  end
+
+  create_table "chef_restaurants", force: :cascade do |t|
+    t.bigint "chef_id", null: false
+    t.bigint "restaurant_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chef_id"], name: "index_chef_restaurants_on_chef_id"
+    t.index ["restaurant_id"], name: "index_chef_restaurants_on_restaurant_id"
+  end
 
   create_table "chefs", force: :cascade do |t|
     t.bigint "profile_id", null: false
@@ -30,6 +48,20 @@ ActiveRecord::Schema.define(version: 2020_11_27_025138) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "chef_id", null: false
+    t.integer "pax_number"
+    t.bigint "cuisine_id", null: false
+    t.float "duration"
+    t.string "booking_datetime"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["chef_id"], name: "index_orders_on_chef_id"
+    t.index ["cuisine_id"], name: "index_orders_on_cuisine_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
   create_table "profiles", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -39,6 +71,20 @@ ActiveRecord::Schema.define(version: 2020_11_27_025138) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.bigint "order_id", null: false
+    t.float "cost"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["order_id"], name: "index_transactions_on_order_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -53,6 +99,14 @@ ActiveRecord::Schema.define(version: 2020_11_27_025138) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "chef_cuisines", "chefs"
+  add_foreign_key "chef_cuisines", "cuisines"
+  add_foreign_key "chef_restaurants", "chefs"
+  add_foreign_key "chef_restaurants", "restaurants"
   add_foreign_key "chefs", "profiles"
+  add_foreign_key "orders", "chefs"
+  add_foreign_key "orders", "cuisines"
+  add_foreign_key "orders", "users"
   add_foreign_key "profiles", "users"
+  add_foreign_key "transactions", "orders"
 end
