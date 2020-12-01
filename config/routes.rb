@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  root to: "chefs#index"
   devise_for :users
   resources :chefs
-  root to: "chefs#index"
   resources :profiles
 end
