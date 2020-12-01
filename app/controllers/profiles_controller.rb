@@ -31,10 +31,14 @@ class ProfilesController < ApplicationController
     private
 
     def profile_params
-        params.require(:profile).permit(:first_name, :last_name, :home_address, :mobile_number)
+        params.require(:profile).permit(:first_name, :last_name, :home_address, :mobile_number, :picture)
     end
 
     def set_profile
       @profile = Profile.find_by(user_id: current_user.id)
     end
+
+
+
+    
 end

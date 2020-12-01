@@ -1,4 +1,5 @@
 <h1>New Profile</h1>
+
 <%= form_with model: @profile, class: "nifty_form" do |f| %>
   <%= f.label "First Name" %>
   <%= f.text_field :first_name %>
@@ -12,6 +13,9 @@
   <br>
   <%= f.label "Mobile Number" %>
   <%= f.text_field :mobile_number %>
+  <br>
+  <%= f.label "Picture" %>
+  <%= f.file_field :picture, accept: "image/png, image/jpg, image/jpeg" %>
   <br>
   <%= f.submit "Create" %>
 <% end %>

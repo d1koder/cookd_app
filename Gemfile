@@ -46,3 +46,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+gem "aws-sdk-s3", "~> 1.85"
+gem "jquery-rails"
+
+gem "mini_magick", "~> 4.11"
