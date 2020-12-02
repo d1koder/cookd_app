@@ -30,9 +30,22 @@ class ChefsController < ApplicationController
     end
 
     def update
+      respond_to do |format|
+        if @chef.update(profile_params)
+          format.html { redirect_to @chef, notice: 'Chef was successfully updated.' }
+        else
+          format.html { render :edit }
+        end
+      end
     end
 
-    def detroy
+    def destroy
+        @chef.destroy
+        respond_to do |format|
+          format.html { redirect_to root_path, notice: 'Chef was successfully destroyed.' }
+          format.json { head :no_content }
+        end
+      end
     end
 
     private
