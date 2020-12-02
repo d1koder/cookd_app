@@ -4,19 +4,19 @@
 
 ## R7 | Identify the Problem. 
 
-Covid-19 has produced new and unique problems that have affected the global economy in an unprecedented scale. One in particular - out of the many indusrtires that've been affected, is the hospitalty industry. Resturants all over have closed or are restricted. What once was a fun endeavour, has and is slowly losing its appeal. 
+Covid-19 has produced new and unique problems that have affected the global economy in an unprecedented scale. One in particular - out of the many indusrtires that've been affected, is the hospitalty industry. Resturants everywhere have closed or are restricted. What used to be a fun endeavour, has slowly lost its appeal. 
 
-Hospitality workers, especailly chefs have lost jobs. 
+Not to mention, many hospitality jobs have gone. 
 
 Consumers have also lost an importnant factor that plays in their work/life balance - entertainment by food. limited  choices have degraded consumer confidence as they now choose to just confide in thier own abode. 
 
 ## R8 | The Solution.
 
-Cookd is a marketplace style web app that aims to bridge this forced gap in the market by connecting proffesional/ highly experienced chefs with home owners/ renters. 
+Cookd is a marketplace style web app that aims to bridge this forced gap in the market, by connecting proffesional and highly experienced chefs with your average consumer. 
 
-Users looking to host a party, can order a professional chef to come into their home and take care of the whole restaurant experience, but in the comfort of their own home . 
+Users looking to host a party, can order a professional chef to take care of the whole restaurant experience, but in the comfort of their own home.
 
-The vision for this app was inspired by conveinace. 
+The vision for this app was inspired by convenience. 
 
 Chefs have jobs again - or moreso their own buisness (sidehusltle if you will?)
 
@@ -30,41 +30,39 @@ https://cookd-app.herokuapp.com/
 
 https://github.com/d1koder/cookd_app
 
-## R11 | What is Cookd?
+## R11 | Overview - What is Cookd?
 
 #### 		1 | Purpose
 
-Cookd is a two sided market place for the booking and creating lisitings for chefs and their services. The main focus will be for customers to browse various chefs online and to connect chefs with customers - and vice versa - so that chefs can have a platform to monetise their skills, and customers can conveinlty book a chef for their party.
+Cookd is a two sided market place for booking and creating lisitings for chefs and their services. The main focus will be for customers to browse various chefs online and to connect chefs with customers - and vice versa - so that chefs can have a platform to monetise their skills, and customers can conveniently book a chef for a party.
 
 #### 		2 | Functionality/ Features
 
-Cookd will be let Chefs create profiles of themsleves, with their profile displayed on the home page in a blog style grid format, and each tile that highlights their skills, cuisines on offer and pricing and availability. This in turn will allow the user/s - or customer - to browse through a list of chefs and/or cuisines according to the user/s desire. The user/s will be able to click on each tile to reveal more information such as, the chefs ratings and their availability. The user can in turn make a sound decision to book their desired chef for a specific date/time. Chefs and users will have the ability to "CRUD" their profiles if they wish.
+Cookd allows chefs to create profiles of themsleve, adding images and having it displayed on the home page in a blog style grid format. Each tile highlights their skills, cuisines on offer, pricing and availability. This in turn will allow the users - or customer - to browse through a list of chefs and/or cuisines according to the users desire. The users will be able to click on each tile to reveal more information such as, the chefs ratings and their availability. The user can in turn make a sound decision to book their desired chef for a specific date/time. Chefs and users will have the ability to "CRUD" their profiles if they wish.
 
 #### 2.1 User accounts
 
-​	#talk about user account functionality, users can create accounts accroding to their purpose ie, chef or customer etc
+Ability for Chefs and/or Users to create for themselves a new profile if they haven't signed up already. Also where Users and Chefs can sign in to existing accounts. 
 
 #### 2.2 Browse
 
-​	#talk about how the index page displays all the available chefs that have accounts, and how customers can browse
-
-​	through a list or tiles of profiles.
+A list of available Chefs laid out in a blog style format, complete with profile pictures and details of their skills and avilability. Users should be able to click on the tiles to expand.
 
 #### 2.3 Chefs
 
- list of chefs available. users can scrollthrough thubmbnails of chefs and click to expand for more info
+Chefs can create profiles, add, edit and delete parts of their profile.
 
 #### 2.4 My account
 
-​	this is were users can login with their credentials, as either a chef or user
+This is were users can login with their credentials, as either a Chef or User. They can also have the option at the bottom to delete their account.
 
 #### 2.5 About
 
-​	this is where info about how to use the app and its purpose is detailed here
+This is where information about how to use the app and its purpose, will be detailed.
 
-#### 2.6 FAQ
+#### 2.6 FAQ (In future app update)
 
-​	this is where users can acces privacy info and rules etc.
+This is where users can view all relevant policies. As well as common questions. 
 
 #### 		3 | Sitemap
 
@@ -76,11 +74,11 @@ Cookd will be let Chefs create profiles of themsleves, with their profile displa
 
 <img src="docs/app_home.png" style="zoom:50%;" />
 
-* Create a new Chef profile page - New Profile.
+* Create a New Chef Profile page - New Profile.
 
 <img src="docs/app_new_profile.png" style="zoom:50%;" />
 
-* A completed Chefs profile - My Profile.
+* A complete, Chefs Profile - My Profile.
 
 <img src="docs/app_profile.png" style="zoom:50%;" />
 
@@ -88,9 +86,9 @@ Cookd will be let Chefs create profiles of themsleves, with their profile displa
 
 #### 		5 | Target Audience
 
-Chefs looking to monetise their experience through a digital platform, and create themseleves a reputation in the process. 
+Chefs looking to monetise their experience through a digital platform, and create for themselves a reputation in a new market. 
 
-Users looking for connivence when it comes to organising and hosting a party or event in their place of residence, without compromising on the quaility. 
+Users looking for connivence when it comes to organising and hosting a party or event at their place of residence, without compromising on the quaility.
 
 #### 		6 | Tech Stack
 
@@ -99,7 +97,7 @@ Users looking for connivence when it comes to organising and hosting a party or 
 | **Front-end**:      | HTML, CSS, Sass |
 | **Back-end**:       | Ruby on Rails   |
 | **Deployment**:     | Heroku          |
-| **Active Storage**: | AWS, S3         |
+| **Active Storage**: | AWS, S3, IAM    |
 
 ## R12 | User Story 
 
@@ -120,8 +118,6 @@ As a customer, I want to see what other customer reviews have been left, so that
 As a chef, I want to be able to edit or delete listings, as I progress professionally.
 
 As a customer, I want to be able to pay with a credit card, so that I can confirm my booking with a particular chef.
-
-
 
 ## R13 | Wireframes 
 
@@ -159,48 +155,53 @@ As a customer, I want to be able to pay with a credit card, so that I can confir
 
 <img src="docs/ERD.final.png" style="zoom:50%;" />
 
-
-
 ## R15 | High Level Components within Cookd
 
-#### Chefs
+#### Chefs Page New
 
-When users navigate to this page, a tile list is diplayed of chefs with images of relevant stuff about the chefs. they can save and also write and give ratings for the chefs.
+When users navigate to this page, a tile list is diplayed of all the chefs along with profile pictures and details of the chef.  Chefs can add their details and edit theri profile if they wish here too.
 
-#### My accounts
+#### Sign In/Up
 
-users are prompted to select if theyre signing in as a chef or user accroding to what they signed up an account as. if they have no account they will have the option to signup.
+Users are prompted to sign in and/or sign up. They have the option to sign in or create a new profile by first signing up.
 
-Chefs can upload images, write about their ecepreince and skill set. chefs can update and or delte past posts images etc.
+Chefs can upload images, write about their experience and skill set, while also adding in their hourly price. Chefs can update and or delete past posts images etc.
 
-customers can also create a profile, and have the ability to rate chefs and also comment about their experiences publicly. customers can also delte posts theyve made previously.
+Customers can also create a profile, and have the ability to rate chefs and also comment about their experiences publicly *(In future updates to app)*. Customers can also delete posts they've made previously.
 
-#### Search/browse
+#### Search/Browse
 
-users can use the search bar to navigate and browse for chefs and or cuisines theyre intereseted in. users can save facourites etc.
+*(In future app update)* 
 
-#### About
+Users can use the search bar to navigate and browse for chefs and or cuisines theyre intereseted in. users can save facourites etc.
 
+#### Transactions 
 
+Users can automatically see the total cost displayed in front of them, after they've selected a paticular chef with specific dates/times. This is calculated within the Model using ruby methods, linked by the Orders and Chefs table.
 
 ## R16 | 3rd Party service details used by CooKd
 
-- Heroku:
-  - A cloud platform or PaaS. Used by developers to quickly deploy web apps to market using a simple hassle-free platform .
-- AWS:
-  - A low cost infrastructure platform in the cloud and on-demand, that is Secure, Open & Flexible, and Agile.
-    - S3 was used for storage when users upload their images. 
-    - IAM is used by the Cookd app to help manage individual user access to the S3 storage. It allows programtic access to services by AWS.
-- PostgreSQL:
-  - The database management system, which is open source and free to use. It can also be known as just Postgres. It works as a relatioknal SQL databse. 
-- Gems:
-  - Devsie facilitates the password requirements and email verification proceses within the app. This Gem is responsible for authenicating and authorising users of the Cookd Web Application. 
+#### Heroku:
 
+- A cloud platform or PaaS. Used by developers to quickly deploy web apps to market using a simple hassle-free platform .
 
+#### AWS:
+
+- A low cost infrastructure platform in the cloud and on-demand, that is Secure, Open & Flexible, and Agile.
+  - S3 was used for storage when users upload their images. 
+  - IAM is used by the Cookd app to help manage individual user access to the S3 storage. It allows programtic access to services by AWS.
+
+#### PostgreSQL:
+
+- The database management system, which is open source and free to use. It can also be known as just Postgres. It works as a relatioknal SQL databse. 
+
+#### Gems:
+
+- Devsie facilitates the password requirements and email verification proceses within the app. This Gem is responsible for authenicating and authorising users of the Cookd Web Application. 
 
 ## R17 | Describe your projects *models* in terms of the relationships (active record associations) they have with each other
 
-Rails supports six types of associations:
+Rails supports six types of associations. Cookd App employs several of the below associations :
 
 - `belongs_to`
 - `has_one`
@@ -209,38 +210,156 @@ Rails supports six types of associations:
 - `has_one :through`
 - `has_and_belongs_to_many
 
+| Models               | Description                                         |
+| -------------------- | --------------------------------------------------- |
+| **Users**            | The customers looking to hire Chefs.                |
+| **Profile**          | Details of Chef. Name, origin etc.                  |
+| **Chef**             | Form to enter years of experience and price.        |
+| **Cuisine**          | The type of Cuisines available.                     |
+| **Chef_Cuisines**    | List of all the Cuisines a Chef can cook.           |
+| **Restaurant **      | A list of all the Restaurants.                      |
+| **Chef_Restaurant ** | A list of all the Restaurants a chef has worked at. |
+| **Order**            | A breakdown of the order by the User                |
+| **Transaction**      | Shows cost breakdown.                               |
 
+### Associations:
 
+**Users**
 
+```ruby
+class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  has_one :profile, class_name: "Profile"
+end
+```
+
+**Profile**
+
+```ruby
+class Profile < ApplicationRecord
+  belongs_to :user
+  has_one_attached :picture
+  has_one :chef, dependent: :destroy
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :home_address, presence: true
+  validates :mobile_number, presence: true
+  validates :user_id, presence: true
+end
+```
+
+**Chef**   
+
+``` ruby
+class Chef < ApplicationRecord
+  belongs_to :profile
+  has_many :chef_cuisines
+  has_many :cuisines, through: :chef_cuisines
+  has_many :chef_restaurants
+  has_many :restaurants, through: :chef_restaurants
+  validates :profile_id, presence: true
+  validates :year_experience, presence: true
+  validates :price, presence: true
+end
+```
+
+**Cuisine** 
+
+```ruby
+class Cuisine < ApplicationRecord
+    has_many :chef_cuisines
+    has_many :chefs, through: :chef_cuisines
+    validates :type, presence: true
+end
+```
+
+**Chef_Cuisine**
+
+```ruby
+class ChefCuisine < ApplicationRecord
+  belongs_to :chef
+  belongs_to :cuisine
+  validates :chef_id, presence: true
+  validates :cuisine_id, presence: true
+end
+```
+
+**Restaurant **  
+
+```ruby
+class Restaurant < ApplicationRecord
+    has_many :chef_restaurants
+    has_many :chefs, through: :chef_restaurants
+    validates :name, presence: true
+end
+```
+
+**Chef_Restaurant **  
+
+```ruby
+class ChefRestaurant < ApplicationRecord
+  belongs_to :chef
+  belongs_to :restaurant
+  validates :chef_id, presence: true
+  validates :restaurant_id, presence: true
+end
+```
+
+ **Order**   
+
+```ruby
+class Order < ApplicationRecord
+  belongs_to :user
+  belongs_to :chef
+  belongs_to :cuisine
+  validates :user_id, presence: true
+  validates :chef_id, presence: true
+  validates :pax_number, presence: true
+  validates :cuisine_id, presence: true
+  validates :duration, presence: true
+  validates :booking_datetime, presence: true
+end
+```
+
+**Transaction**
+
+```ruby
+class Transaction < ApplicationRecord
+  belongs_to :order
+  before_save :save_cost
+  validates :order_id, presence: true
+  validates :cost, presence: true
+
+  def save_cost
+    self.cost = self.order.duration * self.order.chef.price
+  end
+
+end
+```
 
 ## R18 | Discuss the database relations to be implemented in your application
 
-**Relations:**
+There are several types of relations used in cookd, a few of them will be briefly mentioned here. Please check ERD for further clarity:
 
-- There are several types of relations used in cookd:
-- **1 to 1:**
-  - 1 to 1 (Optional): Users can optionally add a single address (coming in a future release) so a 1 to 1 relation was setup and set to optional
-  - 1 to 1 (Mandatory): Each address must be tied to a single user, so a 1 to 1 relation was setup and was required
+**1 to 1:**
 
-``` ruby rails
+- 1 to 1: Users can only have one Profile. And one Profile can only belong to one User. 
+- The same also goes for Chefs and Profiles. Only one Chef can belong to one Profile, and one Profile can only belong to one Chef.
 
-```
+**1 to Many:**
 
+- Users can have many Orders, but only an Order can only have one and only one User.
+- Same can be said about Transactions. Users can have many Transactions.
+- Chefs can belong to many Restaurants.
+- And an Order can have many Cuisines.
 
+**Many to Many:**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Chefs can know many Chef_Cuisines, and Chef_Cuisines can belong to many different Chefs.
+- Cuisines can belong to a whole host of different Chef_cuisines, and there can be many Chef_cuisines as there are Cuisines.
 
 ## R19 | Database Schema Design
 
@@ -369,10 +488,6 @@ ActiveRecord::Schema.define(version: 2020_12_01_024338) do
 end
 
 ```
-
-
-
-
 
 ## R20 | Describe the way tasks are allocated and tracked in your project 
 
