@@ -68,11 +68,23 @@ Cookd will be let Chefs create profiles of themsleves, with their profile displa
 
 #### 		3 | Sitemap
 
-(insert here)
+<img src="docs/sitemap.png" style="zoom:50%;" />
 
 #### 		4 | Screenshots
 
-(after completion of deploying on heroku.)
+* The Home Page - Cookd App.
+
+<img src="docs/app_home.png" style="zoom:50%;" />
+
+* Create a new Chef profile page - New Profile.
+
+<img src="docs/app_new_profile.png" style="zoom:50%;" />
+
+* A completed Chefs profile - My Profile.
+
+<img src="docs/app_profile.png" style="zoom:50%;" />
+
+
 
 #### 		5 | Target Audience
 
@@ -149,8 +161,6 @@ As a customer, I want to be able to pay with a credit card, so that I can confir
 
 
 
-
-
 ## R15 | High Level Components within Cookd
 
 #### Chefs
@@ -211,6 +221,26 @@ Rails supports six types of associations:
 - **1 to 1:**
   - 1 to 1 (Optional): Users can optionally add a single address (coming in a future release) so a 1 to 1 relation was setup and set to optional
   - 1 to 1 (Mandatory): Each address must be tied to a single user, so a 1 to 1 relation was setup and was required
+
+``` ruby rails
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## R19 | Database Schema Design
 
