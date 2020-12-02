@@ -3,7 +3,7 @@ class ChefsController < ApplicationController
 
     #Get all chefs from database
     def index
-        @chefs = Chef.all
+        @chefs = Chef.includes(:profile).all
     end
 
     #New chef object 

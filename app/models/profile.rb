@@ -1,6 +1,7 @@
 class Profile < ApplicationRecord
   belongs_to :user
   has_one_attached :picture
+  has_one :chef, dependent: :destroy
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :home_address, presence: true
