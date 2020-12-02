@@ -1,10 +1,12 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, except: [:create, :new]
 
+    # Method for new profile
     def new
         @profile = Profile.new
     end
-
+    
+    # Create new profile in database
     def create
         @profile = Profile.new(profile_params)
         @profile.user_id = current_user.id
@@ -46,10 +48,12 @@ class ProfilesController < ApplicationController
 
     private
 
+    # Strong params for profile
     def profile_params
         params.require(:profile).permit(:first_name, :last_name, :home_address, :mobile_number, :picture)
     end
 
+    # Set profile for chef
     def set_profile
       @profile = Profile.find_by(user_id: current_user.id)
     end
